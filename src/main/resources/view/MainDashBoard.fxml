@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="root" prefHeight="900.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.controller.MainDashBoardController">
+   <children>
+      <VBox prefHeight="900.0" prefWidth="190.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1110.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane prefHeight="116.0" prefWidth="200.0">
+               <children>
+                  <JFXButton fx:id="btnDashBoard" alignment="TOP_CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="25.0" layoutY="10.0" onAction="#btnDashBoardOnAction" prefHeight="100.0" prefWidth="150.0" text="DashBoard">
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/dashboard.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane>
+            <Pane prefHeight="116.0" prefWidth="200.0">
+               <children>
+                  <JFXButton fx:id="btnStudent" alignment="TOP_CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="25.0" layoutY="10.0" onAction="#btnStudentOnAction" prefHeight="100.0" prefWidth="150.0" text="Students">
+                     <graphic>
+                        <ImageView fitHeight="45.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/customer.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane>
+            <Pane prefHeight="116.0" prefWidth="200.0">
+               <children>
+                  <JFXButton fx:id="btnRoom" alignment="TOP_CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="25.0" layoutY="10.0" onAction="#btnRoomOnAction" prefHeight="100.0" prefWidth="150.0" text="Rooms">
+                     <graphic>
+                        <ImageView fitHeight="45.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/room.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane>
+            <Pane prefHeight="116.0" prefWidth="200.0">
+               <children>
+                  <JFXButton fx:id="btnLogout" alignment="TOP_CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="25.0" layoutY="10.0" onAction="#btnLogoutOnAction" prefHeight="100.0" prefWidth="150.0" text="Logout">
+                     <graphic>
+                        <ImageView fitHeight="45.0" fitWidth="67.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/logout.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane>
+         </children>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </VBox>
+      <AnchorPane fx:id="changeRoot" layoutX="201.0" prefHeight="900.0" prefWidth="1100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="190.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+   </children>
+</AnchorPane>
