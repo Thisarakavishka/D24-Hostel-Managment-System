@@ -3,9 +3,15 @@ package com.example.controller;
 import com.jfoenix.controls.JFXButton;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.layout.AnchorPane;
 
+import java.io.IOException;
+
 public class MainDashBoardController {
+
+    @FXML
+    public JFXButton btnUsers;
 
     @FXML
     private AnchorPane root;
@@ -36,13 +42,20 @@ public class MainDashBoardController {
     }
 
     @FXML
-    void btnRoomOnAction(ActionEvent event) {
-
+    void btnRoomOnAction(ActionEvent event) throws IOException {
+        changeRoot.getChildren().clear();
+        changeRoot.getChildren().add(FXMLLoader.load(getClass().getResource("/view/RoomForm.fxml")));
     }
 
     @FXML
-    void btnStudentOnAction(ActionEvent event) {
-
+    void btnStudentOnAction(ActionEvent event) throws IOException {
+        changeRoot.getChildren().clear();
+        changeRoot.getChildren().add(FXMLLoader.load(getClass().getResource("/view/StudentForm.fxml")));
     }
 
+    @FXML
+    void btnUsersOnAction(ActionEvent event) throws IOException {
+        changeRoot.getChildren().clear();
+        changeRoot.getChildren().add(FXMLLoader.load(getClass().getResource("/view/UserForm.fxml")));
+    }
 }
