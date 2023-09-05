@@ -1,10 +1,11 @@
 package com.example.bo.bos;
 
+import com.example.bo.SuperBO;
 import com.example.dto.RoomDTO;
 
 import java.util.List;
 
-public interface RoomBO {
+public interface RoomBO extends SuperBO {
 
     Boolean saveRoom(RoomDTO dto);
 
