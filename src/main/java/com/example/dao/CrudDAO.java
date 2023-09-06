@@ -12,6 +12,8 @@ public interface CrudDAO<T> extends SuperDAO {
 
     Boolean exist(String id) throws Exception;
 
+    T search(String id) throws Exception;
+
     String getLastId() throws Exception;
 
     List<T> getAll() throws Exception;
