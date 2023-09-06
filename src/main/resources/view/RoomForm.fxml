@@ -9,21 +9,20 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane fx:id="root" prefHeight="900.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.controller.RoomFormController">
    <children>
-      <Line endX="1000.0" layoutX="100.0" layoutY="104.0" startX="-100.0" />
-      <Text layoutX="25.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rooms" wrappingWidth="225.5234375">
+      <Line endX="1000.0" layoutX="100.0" layoutY="104.0" startX="-100.0" AnchorPane.topAnchor="100.0" />
+      <Text layoutX="25.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="rooms" wrappingWidth="225.5234375" AnchorPane.topAnchor="25.0">
          <font>
             <Font name="System Bold" size="50.0" />
          </font>
       </Text>
-      <JFXButton fx:id="btnAdd" buttonType="RAISED" layoutX="920.0" layoutY="134.0" onAction="#btnAddOnAction" prefHeight="40.0" prefWidth="150.0" text="Add Room">
+      <JFXButton fx:id="btnAdd" buttonType="RAISED" layoutX="920.0" layoutY="134.0" onAction="#btnAddOnAction" prefHeight="40.0" prefWidth="150.0" styleClass="btnAdd" stylesheets="@../style/button.css" text="Add Room" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="130.0">
          <font>
             <Font size="15.0" />
          </font>
       </JFXButton>
-      <JFXTextField fx:id="txtSearch" layoutX="35.0" layoutY="134.0" onAction="#txtSearchOnAction" prefHeight="40.0" prefWidth="323.0" />
+      <JFXTextField fx:id="txtSearch" layoutX="35.0" layoutY="134.0" onAction="#txtSearchOnAction" prefHeight="40.0" prefWidth="323.0" AnchorPane.topAnchor="130.0" />
       <TableView fx:id="tableRoom" layoutX="35.0" layoutY="240.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="35.0" AnchorPane.topAnchor="240.0">
         <columns>
           <TableColumn fx:id="colId" prefWidth="168.0" text="Room Id" />
