@@ -1,4 +1,4 @@
-package com.example.d24hostelmanagmentsystem;
+package com.example;
 
 public class WrapApp {
     public static void main(String[] args) {
