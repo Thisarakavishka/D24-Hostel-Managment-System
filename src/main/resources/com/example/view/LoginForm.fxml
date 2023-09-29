@@ -1,16 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.controller.LoginFormController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.controller.LoginFormController">
+   <children>
+      <Circle fill="DODGERBLUE" layoutX="52.0" layoutY="314.0" radius="381.0" stroke="#1477d3" strokeType="INSIDE" strokeWidth="5.0" />
+      <Text fill="WHITE" layoutX="24.0" layoutY="324.0" stroke="#1477d3" strokeType="INSIDE" strokeWidth="0.0" text="D24" wrappingWidth="346.03857421875">
+         <font>
+            <Font name="System Bold" size="180.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="38.0" layoutY="397.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hostel Management System" wrappingWidth="305.78759765625">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Text>
+      <Text fill="#1477d3" layoutX="595.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign In" wrappingWidth="73.81005859375">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="txtUserName" alignment="CENTER" focusColor="#1477d3" layoutX="514.0" layoutY="287.0" onAction="#txtUserNameOnAction" prefHeight="30.0" prefWidth="240.0" promptText="UserName" unFocusColor="#1477d3">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="txtPassword" alignment="CENTER" focusColor="#1477d3" layoutX="512.0" layoutY="350.0" onAction="#txtPasswordOnAction" prefHeight="30.0" prefWidth="240.0" promptText="Password" unFocusColor="#1477d3">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton fx:id="btnLogin" buttonType="RAISED" layoutX="574.0" layoutY="431.0" onAction="#btnLoginOnAction" prefHeight="30.0" prefWidth="120.0" text="Login">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
