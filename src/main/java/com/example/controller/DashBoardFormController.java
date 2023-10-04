@@ -47,6 +47,7 @@ public class DashBoardFormController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         Platform.runLater(() -> {
             stage = (Stage) root.getScene().getWindow();
+            stage.setResizable(false);
         });
     }
 
@@ -73,6 +74,7 @@ public class DashBoardFormController implements Initializable {
     void btnLogoutOnAction(ActionEvent event) {
         try {
             stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/com/example/view/LoginForm.fxml"))));
+            stage.centerOnScreen();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -102,7 +104,7 @@ public class DashBoardFormController implements Initializable {
     void btnStudentsOnAction(ActionEvent event) {
         try {
             changeRoot.getChildren().clear();
-            changeRoot.getChildren().add(FXMLLoader.load(getClass().getResource("/com/example/view/RoomsFrom.fxml")));
+            changeRoot.getChildren().add(FXMLLoader.load(getClass().getResource("/com/example/view/StudentsForm.fxml")));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
